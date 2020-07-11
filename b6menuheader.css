@@ -153,10 +153,25 @@ footer p {
     left: 0;
     height: 0;
     width: 100%;
-    background         : var(--label-bgcolor);
+    background: var(--label-bgcolor);
     border-radius: 3vmax 0 0 0;
+    color: var(--body-bgcolor);
     overflow-y: scroll;
     transition: 0.5s ease-in;
+}
+
+footer p span{
+    font-size: 1.5vmax;
+    line-height: 2vmax;
+}
+
+footer p i{
+    position: absolute;
+    top: 0.5vmax;
+    right: 0.5vmax;
+    height: 1.5vmax;
+    color: var(--banner-color);
+    cursor: pointer;
 }
 
 .b_terms:focus~.p_terms{
