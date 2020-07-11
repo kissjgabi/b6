@@ -139,6 +139,7 @@ footer button {
     transition: 0.5s ease-in;
 }
 
+footer button:hover,
 footer button:focus {
     margin: 0.5vmax;
     background: white;
@@ -160,12 +161,12 @@ footer p {
     transition: 0.5s ease-in;
 }
 
-footer p span{
+footer p span {
     font-size: 1.5vmax;
     line-height: 2vmax;
 }
 
-footer p i{
+footer p i {
     position: absolute;
     top: 0.5vmax;
     right: 0.5vmax;
@@ -174,23 +175,50 @@ footer p i{
     cursor: pointer;
 }
 
-.b_terms:focus~.p_terms{
+.b_terms:hover~.p_terms,
+.b_terms:focus~.p_terms {
     top:  calc(-100vh + 100% + 12.5vmax);
     height: calc(100vh - 100% - 13vmax);
     transition: 0.5s ease-in;
 }
 
-.b_policy:focus~.p_policy{
+.b_terms:hover~.p_policy,
+.b_terms:focus~.p_feedback {
+    top:  0;
+    height: 0;
+    transition: 0.5s ease-in;
+}
+
+
+.b_policy:hover~.p_policy,
+.b_policy:focus~.p_policy {
     top:  calc(-100vh + 100% + 12.5vmax);
     height: calc(100vh - 100% - 13vmax);
     transition: 0.5s ease-in;
 }
 
-.b_feedback:focus~.p_feedback{
+.b_policy:hover~.p_terms,
+.b_policy:hover~.p_feedback {
+    top:  0;
+    height: 0;
+    transition: 0.5s ease-in;
+}
+
+
+.b_feedback:hover~.p_feedback,
+.b_feedback:focus~.p_feedback {
     top:  calc(-100vh + 100% + 12.5vmax);
     height: calc(100vh - 100% - 13vmax);
     transition: 0.5s ease-in;
 }
+
+.b_feedback:hover~.p_terms,
+.b_feedback:hover~.p_policy {
+    top:  0;
+    height: 0;
+    transition: 0.5s ease-in;
+}
+
 
 
 
