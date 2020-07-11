@@ -1,1 +1,3 @@
-# b6
+# b6.hu
+
+## with javascript
