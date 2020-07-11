@@ -11,7 +11,7 @@ input[type=checkbox]:nth-child(1) {
     left         : 0;
     width        : 10vmax;
     height       : 10vmax;
-    background   : rgba(255, 255, 255, 0.9);
+    background   : var(--label-bgcolor);
     border-radius: 0 0 3vmax 0;
     cursor       : pointer;
     z-index      : 10;
@@ -109,15 +109,73 @@ input[type=checkbox]:checked+.menubox_label~.menu_header::after {
     clip-path          : polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
 }
 
-.menu_header p {
-    position : absolute;
-    bottom   : 3vmax;
-    left     : 50%;
-    transform: scale(0);
-}
-
-input[type=checkbox]:checked+.menubox_label~.menu_header p,
 input[type=checkbox]:checked+.menubox_label~.menu_header h1 {
     transform : translate(-50%) scale(1);
     transition: 0.5s ease-in;
 }
+
+footer {
+    position           : absolute;
+    bottom             : 1vmax;
+    left               : 10vmax;
+    width              : calc(100% - 12.5vmax);
+    background         : var(--label-bgcolor);
+    transform          : scale(1);
+    z-index            : 10;
+    transition         : 0.5s ease-in;
+}
+
+input[type=checkbox]:checked+.menubox_label~footer {
+    transform          : scale(0);
+    transition         : 0.1s ease-in;
+}
+
+footer button {
+    margin: 0.5vmax;
+    background: none;
+    cursor: pointer;
+    border: 3px solid transparent;
+    text-decoration: underline;
+    transition: 0.5s ease-in;
+}
+
+footer button:focus {
+    margin: 0.5vmax;
+    background: white;
+    border: 3px solid white;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+
+footer p {
+    position: absolute;
+    top:  0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background         : var(--label-bgcolor);
+    border-radius: 3vmax 0 0 0;
+    overflow-y: scroll;
+    transition: 0.5s ease-in;
+}
+
+.b_terms:focus~.p_terms{
+    top:  calc(-100vh + 100% + 12.5vmax);
+    height: calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}
+
+.b_policy:focus~.p_policy{
+    top:  calc(-100vh + 100% + 12.5vmax);
+    height: calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}
+
+.b_feedback:focus~.p_feedback{
+    top:  calc(-100vh + 100% + 12.5vmax);
+    height: calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}
+
+
+

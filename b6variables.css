@@ -1,4 +1,6 @@
 *{
+    --label-bgcolor : rgba(255, 255, 255, 0.9);
+
     --body-bgcolor: #ffff66;
     --banner-color: #c24cf6;
     --bubble-bgcolor: #fc6e22;
