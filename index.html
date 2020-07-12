@@ -14,15 +14,16 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-    <link rel="stylesheet" href="b6normalize.css">
-    <link rel="stylesheet" href="b6nimationRotate.css">
-    <link rel="stylesheet" href="b6menuheader.css">
-    <link rel="stylesheet" href="b6menu.css">
+    <link rel="stylesheet" href="cssB6Normalize.css">
+    <link rel="stylesheet" href="cssB6nimationRotate.css">
+    <link rel="stylesheet" href="cssB6MenuHeader.css">
+    <link rel="stylesheet" href="cssB6Menu.css">
 
     <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+
 </head>
 
-<body>
+<body onload="getTermsOfUse('termsOfUse');getPrivacyPolicy('privacyPolicy');getFeedBack('feedBack');">
 
     <input type="checkbox" id="menubox" />
 
@@ -107,13 +108,16 @@
             </b>
         </button>
 
-        <p class="p_terms"><span>By logging in, you agree to our terms of use!</span>
+        <p id="termsOfUse" class="p_terms">
+            <span>By logging in, you agree to our terms of use!</span>
             <i class="far fa-window-close f_right" onclick="this.focus();"></i>
         </p>
-        <p class="p_policy"><span>By logging in, you agree to our privacy policy!</span>
+        <p id="privacyPolicy" class="p_policy">
+            <span>By logging in, you agree to our privacy policy!</span>
             <i class="far fa-window-close f_right" onclick="this.focus();"></i>
         </p>
-        <p class="p_feedback"><span>We are interested in your opion, please send us your feedback!</span>
+        <p id="feedBack" class="p_feedback">
+            <span>We are interested in your opion, please send us your feedback!</span>
             <i class="far fa-window-close f_right" onclick="this.focus();"></i>
         </p>
 
@@ -155,6 +159,9 @@
             </filter>
         </defs>
     </svg>
+
+    <script src="jsB6GetFileXhttp.js"></script>
+
 </body>
 
 </html>
