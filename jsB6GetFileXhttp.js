@@ -8,9 +8,7 @@ function loadXMLDoc(path2file, element) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4) {
-			alert(this.readyState + ', ' + this.status);
 			if (this.status == 200) {
-
 				document.getElementById(element).innerHTML = this.responseText;
 			}
 		}
