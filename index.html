@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="cssB6nimationRotate.css">
     <link rel="stylesheet" href="cssB6MenuLayer.css">
     <link rel="stylesheet" href="cssB6MenuHeader.css">
+    <link rel="stylesheet" href="cssB6Menu.css">
 
     <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 </head>
@@ -39,7 +40,50 @@
         <h1 class="menulayer_h1_one">CONTINUE</h1>
         <h1 class="menulayer_h1_two">CONTINUE</h1>
     </div>
+    <div class="menu_container">
+        <form action="https://b6.hu" method="GET">
+            <h2>WITH</h2>
+            <p>
+                <i class="fab fa-google-plus-g f_left"></i>
+                <i class="fas fa-caret-right f_right"></i>
+                <input class="menu_button" type="submit" name="continue_with" value="Google" />
+            </p>
+            <p>
+                <i class="fab fa-facebook-f f_left"></i>
+                <i class="fas fa-caret-right f_right"></i>
+                <input class="menu_button" type="submit" name="continue_with" value="Facebook" />
+            </p>
+            <p>
+                <i class="fab fa-twitter f_left"></i>
+                <i class="fas fa-caret-right f_right"></i>
+                <input class="menu_button" type="submit" name="continue_with" value="Twitter" />
+            </p>
+        </form>
+    </div>
 
+    <div class="menu_container">
+        <form action="https://b6.hu" method="GET">
+            <h2>OR AS</h2>
+            <p>
+                <i class="fas fa-user f_left"></i>
+                <input type="text" id="fname" name="b6name" placeholder="Username or mail" required />
+            </p>
+            <p>
+                <button class="login">
+                </button>
+                <i class="fas fa-key f_left"></i>
+                <i class="fas fa-caret-right f_right"></i>
+                <input type="password" id="fpswd" name="b6pswd" placeholder="Password" required />
+            </p>
+        </form>
+        <form class="anonimous" action="https://b6.hu" method="GET">
+            <p>
+                <i class="fas fa-book-reader f_left"></i>
+                <i class="fas fa-caret-right f_right"></i>
+                <input class="menu_button" type="submit" name="continue_as" value="anonimous" />
+            </p>
+        </form>
+    </div>
     <div class="b6nim bubbles">
         <div class="b6nim_particle"></div>
         <div class="b6nim_particle leftSpin"></div>
