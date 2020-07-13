@@ -147,7 +147,7 @@ footer button:hover {
     transition     : 0.5s ease-in;
 }
 
-footer .content {
+footer p {
     position     : absolute;
     top          : 0;
     left         : 0;
@@ -160,12 +160,12 @@ footer .content {
     transition   : 0.5s ease-in;
 }
 
-footer div span {
+footer p span {
     font-size  : 1.5vmax;
     line-height: 2vmax;
 }
 
-footer div i {
+footer p i {
     position: absolute;
     top     : 0.5vmax;
     right   : 0.5vmax;
@@ -190,27 +190,4 @@ footer div i {
     top       : calc(-100vh + 100% + 12.5vmax);
     height    : calc(100vh - 100% - 13vmax);
     transition: 0.5s ease-in;
-}
-
-.p_focus {
-    top       : calc(-100vh + 100% + 12.5vmax);
-    height    : calc(100vh - 100% - 13vmax);
-    transition: 0.5s ease-in;
-}
-
-.mail_form {
-    position  : relative;
-    margin    : 3em auto;
-    border    : 1px solid #888;
-    width     : 80%;
-    max-width : 799px;
-    height    : auto;
-    background: yellow;
-}
-
-.mail_content {
-    position  : relative;
-    padding   : 0.5em 1em;
-    height    : auto;
-    background: greenyellow;
 }

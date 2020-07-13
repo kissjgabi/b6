@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,
                                    initial-scale=1,
                                    maximum-scale=1, 
-                                   gr-to-fit=no" />
+                                   shrink-to-fit=no" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>B6 HU</title>
@@ -14,13 +14,12 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-    <link rel="stylesheet" href="cssB6Normalize.css">
-    <link rel="stylesheet" href="cssB6nimationRotate.css">
-    <link rel="stylesheet" href="cssB6MenuHeader.css">
-    <link rel="stylesheet" href="cssB6Menu.css">
+    <link rel="stylesheet" href="b6normalize.css">
+    <link rel="stylesheet" href="b6nimationRotate.css">
+    <link rel="stylesheet" href="b6menuheader.css">
+    <link rel="stylesheet" href="b6menu.css">
 
     <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
-
 </head>
 
 <body>
@@ -47,17 +46,17 @@
             <p>
                 <i class="fab fa-google-plus-g f_left"></i>
                 <i class="fas fa-caret-right f_right"></i>
-                <input class="button_with" type="submit" name="continue_with" value="Google" />
+                <input type="submit" name="continue_with" value="Google" />
             </p>
             <p>
                 <i class="fab fa-facebook-f f_left"></i>
                 <i class="fas fa-caret-right f_right"></i>
-                <input class="button_with" type="submit" name="continue_with" value="Facebook" />
+                <input type="submit" name="continue_with" value="Facebook" />
             </p>
             <p>
                 <i class="fab fa-twitter f_left"></i>
                 <i class="fas fa-caret-right f_right"></i>
-                <input class="button_with" type="submit" name="continue_with" value="Twitter" />
+                <input type="submit" name="continue_with" value="Twitter" />
             </p>
         </form>
     </div>
@@ -81,20 +80,20 @@
             <p>
                 <i class="fas fa-book-reader f_left"></i>
                 <i class="fas fa-caret-right f_right"></i>
-                <input class="button_with" type="submit" name="continue_as" value="anonimous" />
+                <input type="submit" name="continue_as" value="anonimous" />
             </p>
         </form>
     </div>
 
     <footer>
         By&nbsp;logging&nbsp;in, you&nbsp;agree&nbsp;to&nbsp;our
-        <button class="b_terms" onclick="this.focus();grow('termsOfUse');">
+        <button class="b_terms" onclick="this.focus();">
             <b>
                 <i>terms of use</i>
             </b>
         </button>
         &
-        <button class="b_policy" onclick="this.focus();grow('privacyPolicy');">
+        <button class="b_policy" onclick="this.focus();">
             <b>
                 <i>privacy policy.</i>
             </b>
@@ -102,53 +101,21 @@
 
         <br />
         We&nbsp;are&nbsp;interested in&nbsp;your&nbsp;opion, please&nbsp;send&nbsp;us&nbsp;your
-        <button class="b_feedback" onclick="this.focus();grow('feedBack');">
+        <button class="b_feedback" onclick="this.focus();">
             <b>
                 <i>feedback!</i>
             </b>
         </button>
 
-        <div id="termsOfUse" class="content p_terms">
-            <span>By logging in, you agree to our terms of use!</span>
-            <i class="far fa-window-close f_right" onclick="this.focus();shrink('termsOfUse');"></i>
-        </div>
-        <div id="privacyPolicy" class="content p_policy">
-            <span>By logging in, you agree to our privacy policy!</span>
-            <i class="far fa-window-close f_right" onclick="this.focus();shrink('privacyPolicy');"></i>
-        </div>
-        <div id="feedBack" class="content p_feedback">
-            <p>
-                <span>We are interested in your opion, please send us your feedback!</span>
-                <i class="far fa-window-close f_right" onclick="this.focus();shrink('feedBack');"></i>
-            </p>
-            <form class="mail_form" name="mailform" action="" method="post">
-                <div class="mail_content">
-                    <label for="sendername"><b>Your name</b></label>
-                    <input type="text" placeholder="Enter your name" name="sendername" required="">
-
-                    <label for="sendermail"><b>Your mail address*</b>
-                        <br>
-                        <h6>* if you are waiting for an answer, enter it exactly</h6>
-                    </label>
-                    <input type="email" placeholder="Enter your mail address" name="sendermail" required="">
-
-                    <label for="comment"><b>Your comment</b></label>
-                    <textarea style="width: 100%" name="comment" cols="45" rows="6" id="comment"> Hi there!
-                    </textarea>
-                    <button type="submit">
-                        Send
-                    </button>
-                </div>
-
-                <hr>
-
-                <div>
-                    <button type="button" onclick="this.focus();shrink('feedBack');" class="cancelbtn">
-                        Cancel
-                    </button>
-                </div>
-            </form>
-        </div>
+        <p class="p_terms"><span>By logging in, you agree to our terms of use!</span>
+            <i class="far fa-window-close f_right" onclick="this.focus();"></i>
+        </p>
+        <p class="p_policy"><span>By logging in, you agree to our privacy policy!</span>
+            <i class="far fa-window-close f_right" onclick="this.focus();"></i>
+        </p>
+        <p class="p_feedback"><span>We are interested in your opion, please send us your feedback!</span>
+            <i class="far fa-window-close f_right" onclick="this.focus();"></i>
+        </p>
 
     </footer>
 
@@ -188,16 +155,6 @@
             </filter>
         </defs>
     </svg>
-
-    <script src="jsB6GetFileXhttp.js"></script>
-    <script src="jsB6CSS.js"></script>
-
 </body>
 
 </html>
-
-<!-- 
-    onload="getTermsOfUse('termsOfUse');
-    getPrivacyPolicy('privacyPolicy');
-    getFeedBack('feedBack');" 
--->
