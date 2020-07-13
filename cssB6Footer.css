@@ -1,0 +1,83 @@
+footer {
+    position  : absolute;
+    bottom    : 1vmax;
+    left      : 10vmax;
+    width     : calc(100% - 12.5vmax);
+    background: var(--label-bgcolor);
+    transform : scale(1);
+    z-index   : 10;
+    transition: 0.5s ease-in;
+}
+
+#menulayer:checked+.menulayer_label~footer {
+    transform : scale(0);
+    transition: 0.1s ease-in;
+}
+
+footer button {
+    margin         : 0.5vmax 0;
+    background     : none;
+    cursor         : pointer;
+    border         : 3px solid transparent;
+    text-decoration: underline;
+    transition     : 0.5s ease-in;
+}
+
+footer button:focus,
+footer button:hover {
+    background     : white;
+    border         : 3px solid white;
+    text-decoration: none;
+    transition     : 0.5s ease-in;
+}
+
+footer p {
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    height       : 0;
+    width        : 100%;
+    background   : var(--label-bgcolor);
+    border-radius: 3vmax 0 0 0;
+    color        : var(--body-bgcolor);
+    overflow-y   : scroll;
+    transition   : 0.5s ease-in;
+}
+
+footer p span {
+    font-size  : 1.5vmax;
+    line-height: 2vmax;
+}
+
+footer p i {
+    position: absolute;
+    top     : 0.5vmax;
+    right   : 0.5vmax;
+    height  : 1.5vmax;
+    color   : var(--banner-color);
+    cursor  : pointer;
+}
+
+.b_terms:focus~.p_terms {
+    top       : calc(-100vh + 100% + 12.5vmax);
+    height    : calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}
+
+.b_policy:focus~.p_policy {
+    top       : calc(-100vh + 100% + 12.5vmax);
+    height    : calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}
+
+.b_feedback:focus~.p_feedback {
+    top       : calc(-100vh + 100% + 12.5vmax);
+    height    : calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}
+
+.p_focus {
+    top       : calc(-100vh + 100% + 12.5vmax);
+    height    : calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}

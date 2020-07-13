@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="cssB6MenuLayer.css">
     <link rel="stylesheet" href="cssB6MenuHeader.css">
     <link rel="stylesheet" href="cssB6Menu.css">
+    <link rel="stylesheet" href="cssB6Footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 </head>
@@ -84,6 +85,44 @@
             </p>
         </form>
     </div>
+
+    <footer>
+        By&nbsp;logging&nbsp;in, you&nbsp;agree&nbsp;to&nbsp;our
+        <button class="b_terms" onclick="this.focus();grow('termsOfUse');">
+            <b>
+                <i>terms of use</i>
+            </b>
+        </button>
+        &
+        <button class="b_policy" onclick="this.focus();grow('privacyPolicy');">
+            <b>
+                <i>privacy policy.</i>
+            </b>
+        </button>
+
+        <br />
+        We&nbsp;are&nbsp;interested in&nbsp;your&nbsp;opion, please&nbsp;send&nbsp;us&nbsp;your
+        <button class="b_feedback" onclick="this.focus();grow('feedBack');">
+            <b>
+                <i>feedback!</i>
+            </b>
+        </button>
+
+        <p id="termsOfUse" class="p_terms">
+            <span>By logging in, you agree to our terms of use!</span>
+            <i class="far fa-window-close f_right" onclick="this.focus();shrink('termsOfUse');"></i>
+        </p>
+        <p id="privacyPolicy" class="p_policy">
+            <span>By logging in, you agree to our privacy policy!</span>
+            <i class="far fa-window-close f_right" onclick="this.focus();shrink('privacyPolicy');"></i>
+        </p>
+        <p id="feedBack" class="p_feedback">
+            <span>We are interested in your opion, please send us your feedback!</span>
+            <i class="far fa-window-close f_right" onclick="this.focus();shrink('feedBack');"></i>
+        </p>
+
+    </footer>
+
     <div class="b6nim bubbles">
         <div class="b6nim_particle"></div>
         <div class="b6nim_particle leftSpin"></div>
@@ -120,6 +159,10 @@
             </filter>
         </defs>
     </svg>
+
+    <script src="jsB6CSS.js"></script>
+    <script src="jsB6GetFileXhttp.js"></script>
+
 </body>
 
 </html>
