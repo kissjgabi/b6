@@ -191,3 +191,9 @@ footer p i {
     height    : calc(100vh - 100% - 13vmax);
     transition: 0.5s ease-in;
 }
+
+.p_focus {
+    top       : calc(-100vh + 100% + 12.5vmax);
+    height    : calc(100vh - 100% - 13vmax);
+    transition: 0.5s ease-in;
+}
