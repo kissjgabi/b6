@@ -9,7 +9,7 @@ function loadXMLDoc(path2file, element) {
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4) {
 			if (this.status == 200) {
-				document.getElementById(element).innerHTML = this.responseText;
+				document.getElementById(element).innerHTML += this.responseText;
 			}
 		}
 	};
