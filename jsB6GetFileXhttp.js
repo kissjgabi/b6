@@ -4,7 +4,7 @@ let path2feedBack = 'feedback.php';
 
 
 function loadXMLDoc(path2file, element) {
-
+	alert(path2policy);
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4) {
