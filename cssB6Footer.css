@@ -31,7 +31,7 @@ footer button:hover {
     transition     : 0.5s ease-in;
 }
 
-footer p {
+footer .policies {
     position     : absolute;
     top          : 0;
     left         : 0;
