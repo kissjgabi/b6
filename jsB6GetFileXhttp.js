@@ -4,10 +4,10 @@ let path2feedBack = 'feedback.php';
 
 
 function loadXMLDoc(path2file, element) {
-	alert(path2policy);
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4) {
+			alert(path2file + "= " + this.status);
 			if (this.status == 200) {
 				document.getElementById(element).innerHTML += this.responseText;
 			}
