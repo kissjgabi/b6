@@ -37,17 +37,18 @@ footer button:hover {
 }
 
 footer .policies {
-    position     : absolute;
-    top          : 0;
-    left         : 0;
-    height       : 0;
-    width        : 100%;
-    background   : var(--label-bgcolor);
-    border-radius: 3vmax 0 0 0;
-    color        : var(--body-bgcolor);
-    text-align   : center;
-    overflow-y   : scroll;
-    transition   : 0.5s ease-in;
+    position                  : absolute;
+    top                       : 0;
+    left                      : 0;
+    height                    : 0;
+    width                     : 100%;
+    background                : var(--label-bgcolor);
+    border-radius             : 3vmax 0 0 0;
+    color                     : var(--body-bgcolor);
+    text-align                : center;
+    overflow-y                : scroll;
+    -webkit-overflow-scrolling: touch;
+    transition                : 0.5s ease-in;
 }
 
 footer .policies span {
