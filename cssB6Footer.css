@@ -24,6 +24,7 @@ footer button {
 }
 
 footer p {
+    padding   : 2vmax;
     text-align: justify;
 }
 

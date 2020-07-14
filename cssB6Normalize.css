@@ -22,6 +22,29 @@ h1 {
   margin   : 0.67em 0;
 }
 
+h2 {
+  font-size: 1.75em;
+  margin   : 0.5em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin   : 0.40em 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin   : 0.32em 0;
+}
+
+h5 {
+  margin   : 0.26em 0;
+}
+
+h6 {
+  margin   : 0.2em 0;
+}
+
 hr {
   box-sizing: content-box;
   height    : 0;
