@@ -24,6 +24,7 @@ footer button {
 }
 
 footer p {
+    margin    : 0.5vmax;
     text-align: justify;
 }
 
@@ -49,12 +50,12 @@ footer .policies {
     transition   : 0.5s ease-in;
 }
 
-footer p span {
+footer .policies span {
     font-size  : 1.5vmax;
     line-height: 2vmax;
 }
 
-footer p i {
+footer .policies i {
     position: absolute;
     top     : 0.5vmax;
     right   : 0.5vmax;
@@ -82,7 +83,7 @@ footer p i {
 }
 
 .p_focus {
-    top       : calc(-100vh + 100% + 12.5vmax);
-    height    : calc(100vh - 100% - 13vmax);
-    transition: 0.5s ease-in;
+    top       : calc(-100vh + 100% + 12.5vmax) !important;
+    height    : calc(100vh - 100% - 13vmax) !important;
+    transition: 0.5s ease-in !important;
 }
