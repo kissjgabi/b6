@@ -23,6 +23,10 @@ footer button {
     transition     : 0.5s ease-in;
 }
 
+footer p {
+    text-align: justify;
+}
+
 footer button:focus,
 footer button:hover {
     background     : white;
@@ -40,6 +44,7 @@ footer .policies {
     background   : var(--label-bgcolor);
     border-radius: 3vmax 0 0 0;
     color        : var(--body-bgcolor);
+    text-align   : center;
     overflow-y   : scroll;
     transition   : 0.5s ease-in;
 }
