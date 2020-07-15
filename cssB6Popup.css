@@ -1,0 +1,6 @@
+@import url("cssB6Variables.css");
+
+.popup p {
+    padding   : 2vmax;
+    text-align: justify;
+}

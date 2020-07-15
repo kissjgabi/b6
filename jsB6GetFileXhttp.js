@@ -1,4 +1,4 @@
-let path2terms = 'https://b6.hu/terms_of_use.php';
+let path2terms = 'terms_of_use.htm';
 let path2policy = 'privacy_policy.htm';
 let path2feedBack = 'feedback.php';
 

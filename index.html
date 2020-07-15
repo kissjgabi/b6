@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="cssB6MenuHeader.css">
     <link rel="stylesheet" href="cssB6Menu.css">
     <link rel="stylesheet" href="cssB6Footer.css">
+    <link rel="stylesheet" href="cssB6Popup.css">
 
     <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 </head>
@@ -88,13 +89,13 @@
 
     <footer>
         By&nbsp;logging&nbsp;in, you&nbsp;agree&nbsp;to&nbsp;our
-        <button class="b_terms" onclick="this.focus();grow('termsOfUse');">
+        <button class="b_terms" onclick="this.focus()">
             <b>
                 <i>terms of use</i>
             </b>
         </button>
         &
-        <button class="b_policy" onclick="this.focus();grow('privacyPolicy');">
+        <button class="b_policy" onclick="this.focus()">
             <b>
                 <i>privacy policy.</i>
             </b>
@@ -102,34 +103,11 @@
 
         <br />
         We&nbsp;are&nbsp;interested in&nbsp;your&nbsp;opion, please&nbsp;send&nbsp;us&nbsp;your
-        <button class="b_feedback" onclick="this.focus();grow('feedBack');">
+        <button class="b_feedback" onclick="this.focus()">
             <b>
                 <i>feedback!</i>
             </b>
         </button>
-
-        <div id="termsOfUse" class="policies p_terms">
-            <span>By logging in, you agree to our terms of use!</span>
-            <i class="far fa-window-close f_right" onclick="this.focus();shrink('termsOfUse');"></i>
-        </div>
-        <div id="privacyPolicy" class="policies p_policy">
-            <span>By logging in, you agree to our privacy policy!</span>
-            <i class="far fa-window-close f_right" onclick="this.focus();shrink('privacyPolicy');"></i>
-            <h1>Privacy Policy</h1>
-            <h4>
-                This privacy policy covers the collection and use of information for this website.<br />
-                This website is managed and operated by B6HU (“We” or “Us”).
-            </h4>
-            <h2>
-                Information That We Collect and How We Use It
-            </h2>
-            <p>&nbsp;</p>
-        </div>
-        <div id="feedBack" class="policies p_feedback">
-            <span>We are interested in your opion, please send us your feedback!</span>
-            <i class="far fa-window-close f_right" onclick="this.focus();shrink('feedBack');"></i>
-        </div>
-
     </footer>
 
     <div class="b6nim bubbles">

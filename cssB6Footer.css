@@ -1,3 +1,5 @@
+@import url("cssB6Variables.css");
+
 footer {
     position  : absolute;
     bottom    : 1vmax;
@@ -23,68 +25,10 @@ footer button {
     transition     : 0.5s ease-in;
 }
 
-footer p {
-    padding   : 2vmax;
-    text-align: justify;
-}
-
 footer button:focus,
 footer button:hover {
     background     : white;
     border         : 3px solid white;
     text-decoration: none;
     transition     : 0.5s ease-in;
-}
-
-footer .policies {
-    position                  : absolute;
-    top                       : 0;
-    left                      : 0;
-    height                    : 0;
-    width                     : 100%;
-    background                : var(--label-bgcolor);
-    border-radius             : 3vmax 0 0 0;
-    color                     : var(--body-bgcolor);
-    text-align                : center;
-    overflow-y                : scroll;
-    -webkit-overflow-scrolling: touch;
-    transition                : 0.5s ease-in;
-}
-
-footer .policies span {
-    font-size  : 1.5vmax;
-    line-height: 2vmax;
-}
-
-footer .policies i {
-    position: absolute;
-    top     : 0.5vmax;
-    right   : 0.5vmax;
-    height  : 1.5vmax;
-    color   : var(--banner-color);
-    cursor  : pointer;
-}
-
-.b_terms:focus~.p_terms {
-    top       : calc(-100vh + 100% + 12.5vmax);
-    height    : calc(100vh - 100% - 13vmax);
-    transition: 0.5s ease-in;
-}
-
-.b_policy:focus~.p_policy {
-    top       : calc(-100vh + 100% + 12.5vmax);
-    height    : calc(100vh - 100% - 13vmax);
-    transition: 0.5s ease-in;
-}
-
-.b_feedback:focus~.p_feedback {
-    top       : calc(-100vh + 100% + 12.5vmax);
-    height    : calc(100vh - 100% - 13vmax);
-    transition: 0.5s ease-in;
-}
-
-.p_focus {
-    top       : calc(-100vh + 100% + 12.5vmax) !important;
-    height    : calc(100vh - 100% - 13vmax) !important;
-    transition: 0.5s ease-in !important;
 }
