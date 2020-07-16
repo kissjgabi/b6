@@ -1,6 +1,38 @@
 @import url("cssB6Variables.css");
 
+.agree {
+    margin     : 0 !important;
+    padding    : 0 4em 0 2em;
+    width      : 100%;
+    color      : red;
+    background : yellow;
+    font-size  : 1.5em;
+    line-height: 2em;
+    text-align : center;
+}
+
+.popup {
+    padding: 1em;
+}
+
+.popup i {
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    margin     : 1em;
+    color      : red;
+    font-size  : 1.5em;
+    line-height: 1.5em;
+    width      : 2em;
+}
+
+.f_right {
+    float: right;
+}
+
+.popup ol,
+.popup ul,
 .popup p {
-    padding   : 2vmax;
+    margin    : 0 1.5em 1.5em;
     text-align: justify;
 }
