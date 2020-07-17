@@ -1,3 +1,4 @@
+let topWindow = window.top;
 let myWindow = window;
 
 function specsOfWindow() {
@@ -34,6 +35,6 @@ function closeWin() {
     window.close();
 }
 
-window.top.addEventListener("focusin", function () {
+topWindow.addEventListener("focusin", function () {
     myWindow.close();
 }); 
