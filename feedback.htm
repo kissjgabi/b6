@@ -5,11 +5,40 @@
 <script src="https://kissjgabi.github.io/b6/jsB6Win.js"></script>
 
 <div class="popup">
-    <p class="agree">We are interested in your opion, please send us your feedbac!k</p>
-    <a href="" onclick="closeWin()">
-        <i class="far fa-window-close f_right"></i>
-    </a>
+    <div class="agree" onclick="closeWin()">
+        We are interested in your opion, please send us your feedback!
+        <i class="far fa-window-close"></i>
+    </div>
 
+    <form class="feedback" action="https://b6.hu/sendmail.php" method="post">
+        <div class="container left">
+            <div class="mailcontent">
+                <label for="sendername"><b>Your name</b></label><br />
+                <input style="width: 100%" type="text" placeholder="Enter your name" name="sendername" required />
+            </div>
+            <div class="mailcontent">
+                <label for="sendermail"><b>Your mail address*</b> <br />
+                    * if you are waiting for an answer, enter it exactly
+                </label><br />
+                <input style="width: 100%" type="email" placeholder="Enter your mail address" name="sendermail"
+                    required />
+            </div>
+            <div class="mailcontent">
+                <label for="comment"><b>Your comment</b></label>
+                <textarea style="width: 100%" name="comment" cols="45" rows="6" id="comment"> Hi there!</textarea>
+            </div>
+            <div class="mailcontent">
+                <button type="submit" class="sendmail">
+                    Send
+                </button>
+            </div>
+        </div>
 
+        <div class="mailcontent">
+            <button type="button" onclick="closeWin()" class="sendmail cancel">
+                Cancel
+            </button>
+        </div>
+    </form>
 
 </div>

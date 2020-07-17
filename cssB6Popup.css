@@ -1,33 +1,50 @@
 @import url("cssB6Variables.css");
 
+.popup {
+    margin : 1%;
+    padding: 1%;
+}
+
 .agree {
     margin     : 0 !important;
-    padding    : 0 4em 0 2em;
+    padding    : 1vmax 6vmax 1vmax 2vmax;
     width      : 100%;
     color      : var(--banner-color);
     background : var(--bubble-bgcolor);
-    font-size  : 1.5em;
-    line-height: 2em;
+    font-size  : 2vmax;
+    line-height: 3vmax;
     text-align : center;
+    filter     : brightness(0.85);
+    opacity    : 0.85;
 }
 
-.popup {
-    padding: 1em;
+.agree:hover {
+    filter : brightness(1);
+    opacity: 1;
+    cursor : pointer;
 }
 
 .popup i {
     position   : absolute;
+    margin     : 0 !important;
     top        : 0;
     right      : 0;
-    margin     : 1em;
+    float      : right;
+    height     : 5vmax;
+    line-height: 5vmax;
+    width      : 4vmax;
+    text-align : center;
     color      : var(--banner-color);
-    font-size  : 1.5em;
-    line-height: 1.5em;
-    width      : 2em;
 }
 
-.f_right {
-    float: right;
+.popup p {
+    filter : brightness(0.85);
+    opacity: 0.85;
+}
+
+.popup p:hover {
+    filter : brightness(1);
+    opacity: 1;
 }
 
 .popup ol,
@@ -35,4 +52,36 @@
 .popup p {
     margin    : 0 1.5em 1.5em;
     text-align: justify;
+}
+
+form.feedback {
+    margin: 2em 0 1em;
+}
+
+form.feedback .mailcontent {
+    margin: 1em;
+}
+
+form.feedback .sendmail {
+    width           : 100%;
+    padding         : 1vmax;
+    margin          : 0.5vmax 0;
+    color           : var(--bubble-bgcolor);
+    background-color: var(--stroke-color);
+    font-size       : 1.25vmax;
+    font-weight     : 900;
+    letter-spacing  : 0.1em;
+    border          : none;
+    border-radius   : 4px;
+    cursor          : pointer;
+    filter          : brightness(0.85);
+}
+
+form.feedback .sendmail:hover {
+    filter: brightness(1);
+}
+
+form.feedback .cancel {
+    color     : var(--banner-color);
+    background: var(--bubble-bgcolor);
 }
