@@ -32,4 +32,8 @@ function openFeedBackWindow() {
 
 function closeWin() {
     window.close();
-} 
+}
+
+window.top.addEventListener("focusin", function () {
+    myWindow.close();
+}); 
