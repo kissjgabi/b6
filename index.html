@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 </head>
 
-<body onload="getTermsOfUse('termsOfUse'); getPrivacyPolicy('privacyPolicy');">
+<body>
 
     <input type="checkbox" id="menulayer" />
 
@@ -89,13 +89,13 @@
 
     <footer>
         By&nbsp;logging&nbsp;in, you&nbsp;agree&nbsp;to&nbsp;our
-        <button class="b_terms" onclick="this.focus();openTermsWin()">
+        <button class="b_terms" onclick="this.focus();openTermsWindow()">
             <b>
                 <i>terms of use</i>
             </b>
         </button>
         &
-        <button class="b_policy" onclick="this.focus();openPolicyWin()">
+        <button class="b_policy" onclick="this.focus();openPolicyWindow()">
             <b>
                 <i>privacy policy.</i>
             </b>
@@ -103,7 +103,7 @@
 
         <br />
         We&nbsp;are&nbsp;interested in&nbsp;your&nbsp;opion, please&nbsp;send&nbsp;us&nbsp;your
-        <button class="b_feedback" onclick="this.focus()">
+        <button class="b_feedback" onclick="this.focus();openFeedBackWindow()">
             <b>
                 <i>feedback!</i>
             </b>

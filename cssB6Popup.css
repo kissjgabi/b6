@@ -1,11 +1,11 @@
-@import url("cssB6Variables.css");
+@import url("https: //kissjgabi.github.io/b6/cssB6Variables.css");
 
 .agree {
     margin     : 0 !important;
     padding    : 0 4em 0 2em;
     width      : 100%;
-    color      : red;
-    background : yellow;
+    color      : var(--banner-color);
+    background : var(--bubble-bgcolor);
     font-size  : 1.5em;
     line-height: 2em;
     text-align : center;
@@ -20,7 +20,7 @@
     top        : 0;
     right      : 0;
     margin     : 1em;
-    color      : red;
+    color      : var(--banner-color);
     font-size  : 1.5em;
     line-height: 1.5em;
     width      : 2em;
