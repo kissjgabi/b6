@@ -1,5 +1,6 @@
-let topWindow = window.top;
 let myWindow = window;
+let myWindowOpen = false;
+let topWindow = window.top;
 
 function specsOfWindow() {
     let border = window.outerWidth / 2 - window.innerWidth / 2;
@@ -13,28 +14,33 @@ function specsOfWindow() {
 function openTermsWindow() {
     myWindow.close();
     let specs = specsOfWindow();
-    myWindow = window.open("https://b6.hu/terms_of_use.htm", "myWindow", specs);
-    myWindow.focus();
+    myWindow = window.open("terms_of_use.htm", "myWindow", specs);
+    myWindowOpen = true;
 }
 
 function openPolicyWindow() {
     myWindow.close();
     let specs = specsOfWindow();
-    myWindow = window.open("https://b6.hu/privacy_policy.htm", "myWindow", specs);
-    myWindow.focus();
+    myWindow = window.open("privacy_policy.htm", "myWindow", specs);
+    myWindowOpen = true;
 }
 
 function openFeedBackWindow() {
     myWindow.close();
     let specs = specsOfWindow();
-    myWindow = window.open("https://b6.hu/feedback.htm", "myWindow", specs);
-    myWindow.focus();
+    myWindow = window.open("feedback.htm", "myWindow", specs);
+    myWindowOpen = true;
 }
 
 function closeWin() {
     window.close();
+    myWindowOpen = false;
 }
 
-topWindow.addEventListener("focusin", function () {
-    myWindow.close();
+topWindow.addEventListener("focus", function () {
+    if (myWindowOpen){
+        myWindow.close();
+        myWindowOpen = false;
+    }
 }); 
+
