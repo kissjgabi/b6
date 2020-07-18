@@ -1,4 +1,4 @@
-let myWindow = window;
+//let myWindow = window;
 let myWindowOpen = false;
 let topWindow = window.top;
 
@@ -12,21 +12,21 @@ function specsOfWindow() {
 }
 
 function openTermsWindow() {
-    myWindow.close();
+    //myWindow.close();
     let specs = specsOfWindow();
     myWindow = window.open("terms_of_use.htm", "myWindow", specs);
     myWindowOpen = true;
 }
 
 function openPolicyWindow() {
-    myWindow.close();
+    //myWindow.close();
     let specs = specsOfWindow();
     myWindow = window.open("privacy_policy.htm", "myWindow", specs);
     myWindowOpen = true;
 }
 
 function openFeedBackWindow() {
-    myWindow.close();
+    //myWindow.close();
     let specs = specsOfWindow();
     myWindow = window.open("feedback.htm", "myWindow", specs);
     myWindowOpen = true;
