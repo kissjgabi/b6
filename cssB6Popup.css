@@ -24,7 +24,7 @@
     cursor : pointer;
 }
 
-.popup i {
+.agree i {
     position   : absolute;
     margin     : 0 !important;
     top        : 0;
