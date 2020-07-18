@@ -1,8 +1,8 @@
 @import url("cssB6Variables.css");
 
 .popup {
-    margin : 1%;
-    padding: 1%;
+    margin : 0;
+    padding: 0;
 }
 
 .agree {
