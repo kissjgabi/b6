@@ -14,21 +14,21 @@ function specsOfWindow() {
 function openTermsWindow() {
     myWindow.close();
     let specs = specsOfWindow();
-    myWindow = window.open("terms_of_use.htm", "myWindow", "_blank", specs);
+    myWindow = window.open("terms_of_use.htm", "myWindow", specs, "_blank");
     myWindowOpen = true;
 }
 
 function openPolicyWindow() {
     myWindow.close();
     let specs = specsOfWindow();
-    myWindow = window.open("privacy_policy.htm", "myWindow", "_blank", specs);
+    myWindow = window.open("privacy_policy.htm", "myWindow", specs, "_blank");
     myWindowOpen = true;
 }
 
 function openFeedBackWindow() {
     myWindow.close();
     let specs = specsOfWindow();
-    myWindow = window.open("feedback.htm", "myWindow", "_blank", specs);
+    myWindow = window.open("feedback.htm", "myWindow", specs, "_blank");
     myWindowOpen = true;
 }
 
