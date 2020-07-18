@@ -7,7 +7,7 @@ footer {
     width     : calc(100% - 12.5vmax);
     background: var(--label-bgcolor);
     transform : scale(1);
-    z-index   : 10;
+    z-index   : 100;
     transition: 0.5s ease-in;
 }
 
