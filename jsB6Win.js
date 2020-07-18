@@ -37,7 +37,7 @@ function closeWin() {
     myWindowOpen = false;
 }
 
-topWindow.addEventListener("focus", function () {
+topWindow.addEventListener("focusin", function () {
     if (myWindowOpen){
         myWindow.close();
         myWindowOpen = false;
