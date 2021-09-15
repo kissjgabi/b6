@@ -7,11 +7,12 @@ body {
 .menu_container {
     position  : relative;
     display   : block;
-    width     : 75%;
+    width     : 100%;
     margin    : 0 auto;
     padding   : 2.5vmax 0;
-    background: transparent;
     text-align: center;
+    background: orangered;
+    border    : 2px solid red;
     z-index   : 100;
 }
 
