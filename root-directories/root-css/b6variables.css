@@ -1,0 +1,10 @@
+
+* {
+    --label-bgcolor : rgba(255, 255, 255, 0.9);
+
+    --body-bgcolor: Navy;
+    --banner-color: Crimson;
+    --bubble-bgcolor: DarkOrange;
+    --stroke-color: DarkRed;
+    --text-shadow-color: White;
+}

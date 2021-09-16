@@ -1,0 +1,225 @@
+@import url("b6variables.css");
+
+h1.slogain {
+    position: absolute;
+    top: 10vmax;
+    left: 50%;
+    font-variant: small-caps;
+    color: var(--label-bgcolor);
+    text-shadow: 2px 2px 4px #000000;
+    transform: translate(-50%, -50%);
+}
+
+#menulayer {
+    position: absolute;
+    text-align: center;
+    opacity : 0;
+}
+
+.menulayer_label {
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    width        : 10vmax;
+    height       : 10vmax;
+    background   : var(--label-bgcolor);
+    border-radius: 0 0 3vmax 0;
+    cursor       : pointer;
+    z-index      : 10;
+    transition   : 1s;
+}
+
+#menulayer:checked+.menulayer_label {
+    width     : 100%;
+    height    : 100%;
+    transition: 0.3s;
+}
+
+.menulayer_icon {
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    width              : 10vmax;
+    height             : 10vmax;
+    text-align         : center;
+    color              : var(--banner-color);
+    -webkit-text-stroke: 2px var(--stroke-color);
+}
+
+.menulayer_icon b {
+    font-size  : 5vmax;
+    line-height: 10vmax;
+}
+
+.menulayer_open {
+    opacity   : 1;
+    transition: 0.3s;
+}
+
+.menulayer_close {
+    width     : 12.5%;
+    opacity   : 0;
+    transition: 0.3s;
+}
+
+#menulayer:checked+.menulayer_label .menulayer_open {
+    opacity   : 0;
+    transition: 0.3s;
+}
+
+#menulayer:checked+.menulayer_label .menulayer_close {
+    opacity   : 1;
+    transition: 0.3s;
+}
+
+.menulayer_header {
+    position  : relative;
+    width     : 0;
+    height    : 10vmax;
+    margin    : 5vmax auto 0;
+    background: transparent;
+    text-align: center;
+    border    : none;
+    z-index   : 100;
+}
+
+.menulayer_header::after {
+    display   : none;
+    transition: 0.25s ease-out;
+}
+
+#menulayer:checked+.menulayer_label~.menulayer_header {
+    width     : 75%;
+    border-top: 4px solid var(--body-bgcolor);
+    transition: 0.25s ease-out;
+}
+
+#menulayer:checked+.menulayer_label~.menulayer_header::after {
+    display   : block;
+    transition: 0.5s ease-out;
+}
+
+.menulayer_header h1 {
+    position           : absolute;
+    top                : calc(-9vmax - 2px);
+    left               : 50%;
+    color              : var(--banner-color);
+    -webkit-text-stroke: 2px var(--body-bgcolor);
+    transform          : translate(-50%) scale(0);
+    font-size          : 6vmax;
+    line-height        : 10vmax;
+    transition         : 0.1s ease-out;
+}
+
+.menulayer_header h1.menulayer_h1_one {
+    color              : var(--banner-color);
+    -webkit-text-stroke: 2px var(--body-bgcolor);
+}
+
+.menulayer_header h1.menulayer_h1_two {
+    color              : var(--bubble-bgcolor);
+    -webkit-text-stroke: 2px var(--body-bgcolor);
+    -webkit-clip-path  : polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+#menulayer:checked+.menulayer_label~.menulayer_header h1 {
+    transform : translate(-50%) scale(1);
+    transition: 0.5s ease-in;
+}
+
+.menu_container {
+    position  : relative; 
+    width     : 70%;
+    margin    : 0 auto;
+    border    : 1px solid transparent;
+    background: transparent;
+    text-align: center;
+    transform   : scale(0);
+    transition  : 0.1s ease-out;
+    z-index   : 100;
+}
+
+#menulayer:checked+.menulayer_label~.menu_container {
+    transform : scale(1);
+    transition: 0.5s ease-out;
+}
+
+#menulayer:checked+.menulayer_label~.menu_container h2 {
+    transform : scale(1);
+    transition: 0.5s ease-out;
+}
+
+.menu_container p {
+    position        : relative;
+    width           : 100%;
+    height          : 6vmax;
+    margin          : 1vh auto;
+    color           : var(--body-bgcolor);
+    background-color: var(--bubble-bgcolor);
+    transform       : scale(0);
+    transition      : 0.1s ease-out;
+}
+
+.menu_container .menu_button {
+    position    : absolute;
+    top         : 50%;
+    left        : 50%;
+    width       : 100%;
+    height      : 100%;
+    padding-left: 15%;
+    text-align  : left;
+    font-size   : 3vmax;
+    font-weight : normal;
+    line-height : 6vmax;
+    color       : var(--body-bgcolor);
+    background  : none;
+    cursor      : pointer;
+    transform   : translate(-50%, -50%);
+}
+
+.menu_container b {
+    font-size  : 3vmax;
+    line-height: 6vmax;
+    background-color: var(--banner-color);
+}
+
+.menu_container b.f_left {
+    min-width: 13%;
+}
+
+.menu_container b.f_right {
+    min-width: 8%;
+}
+
+#menulayer:checked+.menulayer_label~.menu_container p {
+    transform : scale(1);
+    transition: 0.5s ease-out;
+}
+
+#fregister,
+#fresend {
+    position : absolute;
+    left     : 15%;
+    top      : 50%;
+    width    : 75%;
+    height   : 4vmax;
+    font-size: 2.75vmax;
+    transform: translate(0, -50%);
+}
+
+button.login {
+    position         : absolute;
+    top              : 0;
+    right            : 0;
+    width            : 100%;
+    height           : 100%;
+    cursor           : pointer;
+    background-color : transparent;
+    -webkit-clip-path: polygon(0% 100%, 0% 0%, 87% 0%, 87% 10%, 14% 10%, 14% 90%, 87% 90%, 87% 0%, 100% 0%, 100% 100%);
+}
+
+@media screen and (orientation:landscape) {
+    .menu_container {
+
+    }
+}
