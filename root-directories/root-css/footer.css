@@ -4,15 +4,15 @@ footer {
     left: var(--footer-left);
     width: var(--footer-width);
     text-align: center;
-    background: var(--bubble-bgcolor);
+    background: var(--banner-color);
     transform: scale(1);
     z-index: 100;
-    transition: 0.25s ease-in;
+    transition: var(--basic-transition) ease-in;
 }
 
 #menulayer:checked+.menulayer_label~footer {
     transform: scale(0);
-    transition: 0.15s ease-in;
+    transition: calc(var(--basic-transition) / 2) ease-in;
 }
 
 footer button {
@@ -21,12 +21,12 @@ footer button {
     cursor: pointer;
     border: 3px solid transparent;
     text-decoration: underline;
-    transition: 0.25s ease-in;
+    transition: var(--basic-transition) ease-in;
 }
 
 footer button:focus, footer button:hover {
     background: white;
     border: 3px solid white;
     text-decoration: none;
-    transition: 0.25s ease-in;
+    transition: var(--basic-transition) ease-in;
 }
