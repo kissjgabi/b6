@@ -39,10 +39,14 @@ body {
 	text-align: center;
 	line-height: 10vmin;
 	font-size: 3rem;
+	opacity: 0.4;
 }
 
 #main-menu-icon i:hover {
+	font-size: 3.3rem;
+	opacity: 1;
 	cursor: pointer;
+	transition: var(--basic-transition) ease-in;
 }
 
 #main-menubutton:checked+.menulayer .menu-icon #main-menu-open {
