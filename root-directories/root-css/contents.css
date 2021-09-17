@@ -30,10 +30,6 @@ body {
 	border-radius: 0 0 3.33vmin 0;
 }
 
-.menulabel{
-	z-index: 10;
-}
-
 #main-menu-icon i {
 	position: absolute;
 	top: 0;
@@ -53,15 +49,15 @@ body {
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menubutton:checked+.menulabel .menu-icon #main-menu-open {
+#main-menubutton:checked+.menulayer .menu-icon #main-menu-open {
 	display: block;
 }
 
-.menulabel .menu-icon #main-menu-open {
+.menulayer .menu-icon #main-menu-open {
 	display: none;
 }
 
-#main-menubutton:checked+.menulabel .menu-icon #main-menu-close {
+#main-menubutton:checked+.menulayer .menu-icon #main-menu-close {
 	display: none;
 }
 
