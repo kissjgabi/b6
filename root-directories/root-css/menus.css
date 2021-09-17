@@ -106,20 +106,15 @@
 /* MENU LINKS */
 
 .menu .content {
-	position: absolute;
 	width: 100%;
-	top: 22vmax;
-	border: 1px solid transparent;
-	background: transparent;
 	text-align: center;
-	z-index: 100;
 }
 
 .menu .content p {
 	position: relative;
 	width: 70%;
-	height: 6vmax;
-	margin: 1vh auto;
+	height: calc(var(--menu-icon-size) / 1.5);
+	margin: 1vmin auto;
 	color: var(--body-bgcolor);
 	background-color: var(--bubble-bgcolor);
 }
@@ -134,24 +129,24 @@
 	text-align: left;
 	font-size: 3vmax;
 	font-weight: normal;
-	line-height: 6vmax;
+	line-height: calc(var(--menu-icon-size) / 1.5);
 	color: var(--body-bgcolor);
 	background: none;
 	cursor: pointer;
 	transform: translate(-50%, -50%);
 }
 
-.menu .content b {
+.menu .content p b {
 	font-size: 3vmax;
 	line-height: 6vmax;
 	background-color: var(--banner-color);
 }
 
-.menu .content b.f_left {
+.menu .content p b.f_left {
 	min-width: 13%;
 }
 
-.menu .content b.f_right {
+.menu .content p b.f_right {
 	min-width: 8%;
 }
 
