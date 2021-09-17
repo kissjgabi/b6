@@ -49,7 +49,7 @@ body {
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menubutton:checked+.menulabel .menu-icon #main-menu-open {
+#main-menubutton:checked+.menulayer .menu-icon #main-menu-open {
 	display: block;
 }
 
@@ -57,7 +57,7 @@ body {
 	display: none;
 }
 
-#main-menubutton:checked+.menulabel .menu-icon #main-menu-close {
+#main-menubutton:checked+.menulayer .menu-icon #main-menu-close {
 	display: none;
 }
 
