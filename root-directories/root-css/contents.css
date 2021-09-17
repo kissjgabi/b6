@@ -32,10 +32,7 @@ body {
 	height: 10vmin;
 	text-align: center;
 	line-height: 10vmin;
-}
-
-#main-menubutton:checked+.menulayer #main-menu-icon i {
-	color: var(--stroke-color);
+	font-size: 3rem;
 }
 
 #main-menubutton:checked+.menulayer .menu-icon #main-menu-open {
