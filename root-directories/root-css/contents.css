@@ -20,6 +20,8 @@ body {
 	width: 100%;
 	height: 100vh;
 	background-color: var(--label-bgcolor);
+	border-radius: 0 0 10% 0;
+	transition: var(--basic-transition) ease-in;
 }
 
 #main-menulayer .menu-icon {
