@@ -10,7 +10,6 @@ body {
 }
 
 #main-menubutton:checked+.menulayer #main-menu-icon {
-	content: '<i class="far fa-window-close">';
 	color: red;
 }
 
