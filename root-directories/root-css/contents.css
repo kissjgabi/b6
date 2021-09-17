@@ -32,7 +32,6 @@ body {
 	height: 10vmin;
 	text-align: center;
 	line-height: 10vmin;
-	border: 5px double white;
 }
 
 #main-menubutton:checked+.menulayer #main-menu-icon i {
