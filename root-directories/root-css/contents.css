@@ -28,11 +28,10 @@ body {
 	position: absolute;
 	top:0;
 	right: 0;
-	color: blue;
-	text-align: center;
-	line-height: 10vmin;
 	width: 10vmin;
 	height: 10vmin;
+	color: blue;
+	text-align: center;
 	border: 5px double white;
 }
 
