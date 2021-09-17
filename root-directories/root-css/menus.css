@@ -1,4 +1,3 @@
-
 .topmenu {
 	position: fixed;
 	top: 0;
@@ -102,4 +101,77 @@
 
 #main-menubutton:checked+.menulabel .menu-icon #main-menu-close {
 	display: none;
+}
+
+/* MENU LINKS */
+
+.menu .content {
+	position: absolute;
+	width: 100%;
+	top: 22vmax;
+	border: 1px solid transparent;
+	background: transparent;
+	text-align: center;
+	z-index: 100;
+}
+
+.menu .content p {
+	position: relative;
+	width: 70%;
+	height: 6vmax;
+	margin: 1vh auto;
+	color: var(--body-bgcolor);
+	background-color: var(--bubble-bgcolor);
+}
+
+.menu .content .menu_button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	padding-left: 15%;
+	text-align: left;
+	font-size: 3vmax;
+	font-weight: normal;
+	line-height: 6vmax;
+	color: var(--body-bgcolor);
+	background: none;
+	cursor: pointer;
+	transform: translate(-50%, -50%);
+}
+
+.menu .content b {
+	font-size: 3vmax;
+	line-height: 6vmax;
+	background-color: var(--banner-color);
+}
+
+.menu .content b.f_left {
+	min-width: 13%;
+}
+
+.menu .content b.f_right {
+	min-width: 8%;
+}
+
+#fregister {
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	width: 75%;
+	height: 4vmax;
+	font-size: 2.75vmax;
+	transform: translate(0, -50%);
+}
+
+button.login {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background-color: transparent;
+	-webkit-clip-path: polygon(0% 100%, 0% 0%, 87% 0%, 87% 10%, 14% 10%, 14% 90%, 87% 90%, 87% 0%, 100% 0%, 100% 100%);
 }
