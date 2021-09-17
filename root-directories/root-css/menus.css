@@ -113,7 +113,7 @@
 .menu .content p {
 	position: relative;
 	width: 70%;
-	height: calc(var(--menu-icon-size) / 1.5);
+	height: calc(var(--menu-icon-size) / 1.25);
 	margin: 1vmin auto;
 	color: var(--body-bgcolor);
 	background-color: var(--bubble-bgcolor);
@@ -127,9 +127,9 @@
 	height: 100%;
 	padding-left: 15%;
 	text-align: left;
-	font-size: 3vmax;
+	font-size: calc(var(--menu-icon-size) / 2.5);
 	font-weight: normal;
-	line-height: calc(var(--menu-icon-size) / 1.5);
+	line-height: calc(var(--menu-icon-size) / 1.25);
 	color: var(--body-bgcolor);
 	background: none;
 	cursor: pointer;
@@ -137,8 +137,8 @@
 }
 
 .menu .content p b {
-	font-size: 3vmax;
-	line-height: 6vmax;
+	font-size: calc(var(--menu-icon-size) / 2.5);
+	line-height: calc(var(--menu-icon-size) / 1.25);
 	background-color: var(--banner-color);
 }
 
@@ -155,8 +155,8 @@
 	left: 15%;
 	top: 50%;
 	width: 75%;
-	height: 4vmax;
-	font-size: 2.75vmax;
+	height: calc(var(--menu-icon-size) / 1.5);
+	font-size: calc(var(--menu-icon-size) / 2.5);
 	transform: translate(0, -50%);
 }
 
