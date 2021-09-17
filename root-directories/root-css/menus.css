@@ -137,16 +137,18 @@
 }
 
 .menu .content p b {
+	height: calc(var(--menu-icon-size) / 1.5);
 	font-size: calc(var(--menu-icon-size) / 2.5);
 	line-height: calc(var(--menu-icon-size) / 1.25);
-	background-color: var(--banner-color);
 }
 
 .menu .content p b.f_left {
+	float: left;
 	min-width: 13%;
 }
 
 .menu .content p b.f_right {
+	float: right;
 	min-width: 8%;
 }
 
