@@ -10,7 +10,7 @@
     transition: var(--basic-transition) ease-in;
 }
 
-#main-menubutton:checked~#main-footer {
+#main-menubutton:checked+#main-menulabel~#main-footer {
     transform: scale(1);
     transition: calc(var(--basic-transition) / 2) ease-in;
 }
