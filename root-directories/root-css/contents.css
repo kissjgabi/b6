@@ -61,16 +61,16 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 10vmin;
-	height: 10vmin;
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
 	text-align: center;
-	line-height: 10vmin;
-	font-size: 3rem;
+	line-height: var(--menu-icon-size);
+	font-size: calc(var(--menu-icon-size) / 2);
 	opacity: 0.4;
 }
 
 #main-menu-icon i:hover {
-	font-size: 3.3rem;
+	font-size: calc(var(--menu-icon-size) / 2 + 2px);
 	opacity: 1;
 	cursor: pointer;
 	transition: var(--basic-transition) ease-in;
