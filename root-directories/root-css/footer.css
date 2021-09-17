@@ -5,13 +5,13 @@ footer {
     width: var(--footer-width);
     text-align: center;
     background: var(--banner-color);
-    transform: scale(1);
+    transform: scale(0);
     z-index: 100;
     transition: var(--basic-transition) ease-in;
 }
 
 #main-menubutton:checked+.menulayer~footer {
-    transform: scale(0);
+    transform: scale(1);
     transition: calc(var(--basic-transition) / 2) ease-in;
 }
 
