@@ -17,7 +17,7 @@ body, menu {
 	z-index: 100;
 }
 
-#main-menulabel {
+#main-menu {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -25,14 +25,23 @@ body, menu {
 	height: 100vh;
 	border-radius: 0 0 10vmin 0;
 	background-color: var(--label-bgcolor);
+	transition: var(--basic-transition) ease-in;
+}
+
+#main-menulabel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10vmin;
+	height: 10vmin;
+	border-radius: 0 0 3.33vmin 0;
 	z-index: 100;
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menubutton:checked~#main-menu, #main-menulabel {
-	width: 10vmin;
-	height: 10vmin;
-	border-radius: 0 0 3.33vmin 0;
+#main-menubutton:checked~#main-menu {
+	display: none;
+	transition: var(--basic-transition) ease-in;
 }
 
 #main-menu-icon i {
