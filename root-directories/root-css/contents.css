@@ -49,6 +49,10 @@ body {
 	transition: var(--basic-transition) ease-in;
 }
 
+#main-menubutton:checked~#main-menu div {
+	display: none;
+}
+
 #main-menubutton:checked~#main-menulabel {
 	left: 0;
 	transition: var(--basic-transition) ease-in;
