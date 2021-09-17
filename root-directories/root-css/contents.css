@@ -16,7 +16,7 @@ body, menu {
 	visibility: hidden;
 }
 
-#main-menulayer {
+#main-menulabel {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -27,7 +27,7 @@ body, menu {
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menubutton:checked~#main-menulayer {
+#main-menubutton:checked~#main-menulabel {
 	width: 10vmin;
 	height: 10vmin;
 	border-radius: 0 0 3.33vmin 0;
@@ -52,15 +52,15 @@ body, menu {
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menubutton:checked+.menulayer .menu-icon #main-menu-open {
+#main-menubutton:checked+.menulabel .menu-icon #main-menu-open {
 	display: block;
 }
 
-.menulayer .menu-icon #main-menu-open {
+.menulabel .menu-icon #main-menu-open {
 	display: none;
 }
 
-#main-menubutton:checked+.menulayer .menu-icon #main-menu-close {
+#main-menubutton:checked+.menulabel .menu-icon #main-menu-close {
 	display: none;
 }
 
