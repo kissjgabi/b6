@@ -40,7 +40,9 @@ body, menu {
 }
 
 #main-menubutton:checked~#main-menu {
-	display: none;
+	width: 10vmin;
+	height: 10vmin;
+	border-radius: 0 0 3.33vmin 0;
 	transition: var(--basic-transition) ease-in;
 }
 
