@@ -24,19 +24,19 @@ body {
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menu-icon {
+#main-menu-icon i {
 	position: absolute;
-	top:0;
+	top: 0;
 	right: 0;
 	width: 10vmin;
 	height: 10vmin;
-	color: blue;
 	text-align: center;
+	line-height: 10vmin;
 	border: 5px double white;
 }
 
-#main-menubutton:checked+.menulayer #main-menu-icon {
-	color: red;
+#main-menubutton:checked+.menulayer #main-menu-icon i {
+	color: var(--stroke-color);
 }
 
 #main-menubutton:checked+.menulayer .menu-icon #main-menu-open {
