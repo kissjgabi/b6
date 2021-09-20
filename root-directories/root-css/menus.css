@@ -111,13 +111,13 @@
 }
 
 .content {
-	padding: 1.5rem;
+	padding: 2vmin;
 	width: 100%;
 	max-width: 720px;
 	text-align: center;
 	background-color: var(--bubble-bgcolor);
 	box-shadow: 0 0 12px var(--body-bgcolor);
-	border-radius: 0.5rem;
+	border-radius: 1vmin;
 	opacity: 0.8;
 	transition: var(--basic-transition) ease-in;
 }
@@ -138,7 +138,7 @@
 	position: relative;
 	width: 100%;
 	height: calc(var(--menu-icon-size) / 1.25);
-	margin: 1vmin auto;
+	margin: 0 auto;
 	color: var(--body-bgcolor);
 	background-color: var(--bubble-bgcolor);
 }
