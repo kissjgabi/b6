@@ -128,6 +128,12 @@
 	transition: var(--basic-transition) ease-in;
 }
 
+.content:hover p.start-with-email {
+	box-shadow: 2px 2px 4px var(--body-bgcolor);
+	overflow: visible;
+	transition: var(--basic-transition) ease-in;
+}
+
 .menu .content p {
 	position: relative;
 	width: 100%;
@@ -155,7 +161,7 @@
 
 .menu .content p .menu_button:hover {
 	text-shadow: 1px 1px 0 var(--body-bgcolor);
-	border: 1px ridge var(--bubble-bgcolor);
+	box-shadow: 1px 1px 4px var(--body-bgcolor);
 	transition: var(--basic-transition) ease-in;
 }
 
