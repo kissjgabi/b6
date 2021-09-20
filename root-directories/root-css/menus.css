@@ -105,7 +105,12 @@
 
 /* MENU LINKS */
 
-.menu .content {
+.menu {
+	width: 100%;
+	text-align: center;
+}
+
+.content {
 	width: 100%;
 	text-align: center;
 }
