@@ -141,14 +141,22 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	padding: 0.5rem;
 	text-align: right;
 	font-size: calc(var(--menu-icon-size) / 4);
 	font-weight: normal;
 	line-height: calc(var(--menu-icon-size) / 4);
 	color: var(--body-bgcolor);
-	background: white;
+	background: none;
 	border: none;
 	cursor: pointer;
+	transition: var(--basic-transition) ease-in;
+}
+
+.menu .content p .menu_button:hover {
+	text-shadow: 1px 1px 0 var(--body-bgcolor);
+	border: 1px ridge var(--bubble-bgcolor);
+	transition: var(--basic-transition) ease-in;
 }
 
 .menu .content p b {
