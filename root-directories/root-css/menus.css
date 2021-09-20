@@ -183,9 +183,9 @@
 
 #fregister {
 	position: absolute;
-	left: 15%;
+	left: 1%;
 	top: 50%;
-	width: 75%;
+	width: 90%;
 	height: calc(var(--menu-icon-size) / 1.5);
 	font-size: calc(var(--menu-icon-size) / 2.5);
 	transform: translate(0, -50%);
