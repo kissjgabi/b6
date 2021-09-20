@@ -141,9 +141,7 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 50%;
-	padding-left: 15%;
-	text-align: left;
+	text-align: right;
 	font-size: calc(var(--menu-icon-size) / 4);
 	font-weight: normal;
 	line-height: calc(var(--menu-icon-size) / 4);
