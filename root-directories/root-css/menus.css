@@ -138,7 +138,7 @@
 	position: relative;
 	width: 100%;
 	height: calc(var(--menu-icon-size) / 1.25);
-	margin: 0 auto;
+	margin: 0.5vmin auto;
 	color: var(--body-bgcolor);
 	background-color: var(--bubble-bgcolor);
 }
