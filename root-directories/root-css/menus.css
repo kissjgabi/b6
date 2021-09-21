@@ -76,11 +76,12 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: var(--menu-icon-size);
-	height: var(--menu-icon-size);
+	margin: 2px;
+	width: calc(var(--menu-icon-size) - 4px);
+	height:  calc(var(--menu-icon-size) - 4px);
 	text-align: center;
 	font-weight: bold;
-	line-height: var(--menu-icon-size);
+	line-height: calc(var(--menu-icon-size) - 1.5vmin);
 	font-size: calc(var(--menu-icon-size) / 2);
 	color: var(--code-color);
 	background: var(--code-bg-color);
