@@ -72,7 +72,7 @@
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menu-icon b, #main-menu-icon i {
+#main-menu-icon>div, #main-menu-icon i {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -89,7 +89,7 @@
 	opacity: 0.4;
 }
 
-#main-menu-icon i:hover, #main-menu-icon b:hover {
+#main-menu-icon i:hover, #main-menu-icon>div:hover {
 	font-size: calc(var(--menu-icon-size) / 2 + 2px);
 	opacity: 1;
 	cursor: pointer;
