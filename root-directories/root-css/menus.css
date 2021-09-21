@@ -59,7 +59,7 @@
 #main-menubutton:checked~#main-menu {
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
-	border-radius: 0 0 calc(var(--menu-icon-size) / 3) 0;
+	border-radius: 0 0 50% 0;
 	transition: var(--basic-transition) ease-in;
 }
 
@@ -72,19 +72,23 @@
 	transition: var(--basic-transition) ease-in;
 }
 
-#main-menu-icon i {
+#main-menu-icon b, #main-menu-icon i {
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	text-align: center;
+	font-weight: bold;
 	line-height: var(--menu-icon-size);
 	font-size: calc(var(--menu-icon-size) / 2);
+	color: var(--code-color);
+	background: var(--code-bg-color);
+	border-radius: 50%;
 	opacity: 0.4;
 }
 
-#main-menu-icon i:hover {
+#main-menu-icon i:hover, #main-menu-icon b:hover {
 	font-size: calc(var(--menu-icon-size) / 2 + 2px);
 	opacity: 1;
 	cursor: pointer;
